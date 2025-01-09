@@ -4,6 +4,23 @@
 
 The primary objective of this project is to predict the price of a house using its features. This project explores data cleaning, preprocessing, and regression models including Linear Regression, Decision Tree Regression, and Random Forest Regression. We also perform data visualization, outlier detection, and feature importance analysis to understand the relationship between features and house prices.
 
+### Quality Issues:
+
+- Missing or inconsistent data in features like year_built or square_footage.
+- Outliers in high-value houses that may distort predictions.
+
+Cleaning/Transformation:
+- Impute missing values using median or mode (e.g., for categorical features like neighborhood).
+- Scale numerical features for algorithms like regression.
+
+Model Evaluation:
+- Use RMSE to assess overall error.
+- Compare R² on training vs. test sets to detect overfitting.
+
+Dataset Limitations:
+- Regional bias (e.g., data may only cover specific cities or states).
+- Economic trends not captured in static data.
+
 ### Dataset
 
 The dataset used in this project contains the following features:
