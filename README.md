@@ -36,3 +36,7 @@ The dataset used in this project contains the following features:
 - Correlation heatmap to explore the relationships between numerical features.
 - Bar plots for average house prices by neighborhood.
 - Feature importance chart from Random Forest model.
+
+### Source
+
+https://www.kaggle.com/datasets/muhammadbinimran/housing-price-prediction-data
