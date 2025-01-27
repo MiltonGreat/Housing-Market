@@ -2,7 +2,9 @@
 
 ###  Overview
 
-This project involves analyzing and predicting real estate prices using a dataset containing information about properties. The goal is to provide insights into key features influencing property prices and to build an accurate predictive model to assist real estate professionals in making data-driven decisions.
+This project involves analyzing and predicting real estate prices using a synthetic dataset containing information about properties. The goal is to provide insights into key features influencing property prices and to build an accurate predictive model to assist real estate professionals in making data-driven decisions.
+
+The project leverages advanced machine learning techniques, including Random Forest, Gradient Boosting, and XGBoost, to predict housing prices. The best-performing model achieves an R² score of 0.56, demonstrating strong predictive accuracy.
 
 ### Dataset
 
@@ -25,9 +27,9 @@ The dataset used in this project contains the following features:
 
 ### Key Insights
 
-- The correlation analysis reveals that square footage has the strongest relationship with property prices.
-- Log-transformed price (LogPrice) allows for more stable and less skewed predictions.
-- The Random Forest Regressor model achieves an R² score of approximately 0.50, suggesting room for improvement in model accuracy.
+- SquareFeet and HomeAge are the most important features influencing property prices.
+- The log transformation of the target variable (Price) improved model stability and performance.
+- Gradient Boosting outperformed Random Forest and XGBoost, demonstrating its effectiveness for this regression task.
 
 ### Visualizations
 
@@ -36,6 +38,13 @@ The dataset used in this project contains the following features:
 - Correlation heatmap to explore the relationships between numerical features.
 - Bar plots for average house prices by neighborhood.
 - Feature importance chart from Random Forest model.
+
+### Future Work
+
+- Hyperparameter Tuning: Use GridSearchCV or RandomizedSearchCV to fine-tune the best-performing model (Gradient Boosting).
+- Advanced Feature Engineering: Explore interactions between features or incorporate external data (e.g., local amenities, school ratings).
+- Error Analysis: Investigate large prediction errors to identify patterns and improve the model.
+- Deployment: Deploy the model as a web application using Flask or Streamlit for real-time price predictions.
 
 ### Source
 
